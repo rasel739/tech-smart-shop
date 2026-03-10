@@ -18,6 +18,7 @@ import BadgeRound from '@/components/shared/badge-round';
 import { NAV_ITEMS } from '@/lib/constants';
 import MobileNav from './mobile-nav';
 import TopNavbar from './top-navbar';
+import SearchBar from './search-bar';
 
 const Navbar = () => {
   return (
@@ -88,7 +89,7 @@ const Navbar = () => {
             <BadgeRound icon={ShoppingCart} ariaLabel='Cart' />
           </div>
 
-          <div className='text-sm'>
+          <div className='text-sm font-medium '>
             <Link href='/login' className='hover:underline'>
               Login
             </Link>
@@ -105,6 +106,7 @@ const Navbar = () => {
 
         <MobileNav />
       </div>
+      <SearchBar />
     </header>
   );
 };
